@@ -1,20 +1,665 @@
-9/18/18
-Joined the Group. We are considering working with O'Grady Library to design a repository system for them.
-They have recommended we look at two open-source methods, Islandora and D-Space. I am doing preliminary research on Islandora.
+October 7, 2018
+Present: Raj Bhetwal, Augustine Maddox, Theodore Ryan
 
-9/20/18, A
-We met with Amy Steward-Mailhiot, our client. She gave us some basic specifications of what kind of project we are doing, the scope.
+    Ted has begun contacting a few of the vendors we've found that deal with Islandora, since it's starting to look like the better bet for
+the needs of our project. For now Raj is continuing to research DSpace, while I'm still looking into Islandora. Reggie has set up an AWS
+account that will let us set up the servers we need to build our instances of the systems once we start working on them.
 
-9/20/18, B
-We met in class. It looks like we're doing a joint project. Our group will plan out and advise on the design; implementation will be a second group.
+October 14, 2018
+Present: Raj Bhetwal, Regenal Grant, Augustine Maddox, Theodore Ryan
 
-9/25/18
-We continued to do research on the systems. Islandora is looking like a better fit, but we're going to attempt to implement both.
-We need to consider how to implement the system, what kinds of software need to be installed, and how to run it.
+    For the presentation on the 16th/18th, I've successfully set up the simplest version of the Islandora software, a virtual box
+instancewhich is only accessible on my computer. We've had some difficulty with getting consistant attendance with all team members
+(including myself), but generally we seem to be on track for the presentation. Ted has been in contact with a couple of vendors, and
+we're planning to set up another meeting with our client, Amy, to discuss our progress and choose whether to continue to pursue DSpace or
+not.
 
-9/27/18
-We came together and decided we needed a better idea of what course to advise the library on before we meet with them again.
-We will likely wait a week and then schedule a follow up meeting with Amy.
+ 
+October 21, 2018
+Present Raj Bhetwal, Regenal Grant, Theodore Ryan
 
-10/2/18
-We did not accomplish much this week, so we are pushing back our goals by one week.
+    There was a miscommunication in arranging our meeting with Amy, which is mostly my fault. She has indicated to us that we should end
+our consideration of DSpace, however, so we are focusing on Islandora.
+
+From: Ryan, Theodore T. [mailto:TRyan@stmartin.edu] 
+Sent: Wednesday, October 24, 2018 12:23 PM
+To: Heather Pitts <HeatherPitts@oslmail.osl.state.or.us>
+Subject: RE: Islandora senior project research
+
+ I am finishing up my senior year at Saint Martin’s and working on a senior project researching Dspace and Islandora as possible use to set up a repository for the University. I was wondering if you answer some questions about your library use of Islandora:
+ 
+Do you hold space on site for servers to run it or is that on the cloud?
+ No, it is not installed on site, it is hosted.
+Did the library use a vendor to install and run it or is that managed by the yourself?
+Yes, we used a vendor to install and maintain Islandora.
+How does it handle for uploading data into the system? Easy or hard for users to add documentation?
+ It is fine. The browser-based staff interface can be frustrating (and slow) but it works okay. The book content model in particular has given us errors and frustrations, but the regular PDF content model works fine and we also use the compound object content model pretty extensively. (The frustration with compound objects is reordering child objects, which is quite slow.) We have started using the video content model (we participated in a pilot that our vendor undertook) and it seems fine too.
+If you use a vendor and able to say how much does it cost your library yearly/or pay out of pocket maintain the system yourself?
+ I’m afraid I don’t remember what the annual cost is.
+What additional systems other than listed on the Islandora page is required?
+ I don’t think there is anything else that is required.
+Your recommendation on using the system:
+ I would recommend it – you either need staff and time to install and maintain yourself, or the budget to pay a vendor to do it (and just because it’s open source doesn’t mean that will be cheaper than a proprietary system) but overall I like it.
+Pros:
+ It is a robust system with an active community and development continuously happening, and even though we have a hosted system, we can benefit from the developments once they are vetted and available to customers of the vendor. There are multiple content models already available and it is flexible.
+Cons:
+Since it is hosted and because of how the vendor sets things up, we cannot access any theming or customization. We can only add or edit objects and object datastreams, but nothing on the Drupal side or command line. We can’t batch edit metadata that is already in the system (also a limitation of the hosted setup).
+
+
+From: Heather Pitts <heather.pitts@state.or.us> 
+Sent: Wednesday, October 24, 2018 11:36 AM
+To: Ryan, Theodore T. <TRyan@stmartin.edu>
+Cc: Claire Bolyard <claire.bolyard@state.or.us>
+Subject: RE: Islandora senior project research
+
+Hi Ted,
+
+I am the Cataloging Services Librarian and Claire is the Web Services Librarian and the two of us are co-coordinators of the Digital Collections Workgroup here at the State Library and participated in the selection process for a new Digital Asset Management System.
+
+Can you tell us a little bit more about the kinds of questions you have? 
+
+Would you like to set up a phone call with the two of us?
+
+Regards,
+Heather
+
+
+From: Jerry Curry 
+Sent: Monday, October 22, 2018 12:57 PM
+To: Claire Bolyard <ClaireBolyard@oslmail.osl.state.or.us>; Heather Pitts <HeatherPitts@oslmail.osl.state.or.us>
+Cc: TRyan@stmartin.edu
+Subject: RE: Islandora senior project research
+
+Hello Claire & Heather,
+
+Would you be able to respond to the person below about our Islandora install, how we chose it, etc…….
+
+-Jerry
+
+Jerry Curry
+Reference Librarian/eClips Editor
+jerry.w.curry@state.or.us
+Phone 503-378-5008| www.oregon.gov/osl 
+Follow us: Facebook | Twitter | Tumblr | Pinterest
+
+ 
+
+From: Ryan, Theodore T. [mailto:TRyan@stmartin.edu] 
+Sent: Monday, October 22, 2018 12:54 PM
+To: Jerry Curry <JerryCurry@oslmail.osl.state.or.us>
+Subject: Islandora senior project research
+
+Jerry,
+
+   Thank you for taking my call. Anyone that I can be put in touch with about Islandora would be great.
+
+
+ 
+
+Respectfully
+
+Ted Ryan
+360-486-8117
+Tryan@stmartin.edu
+
+Answer from PLU:
+Hello Ted Ryan,
+
+I don't work closely with many of the users of the system, and I am not well versed in competing software systems.  I can't give you a good answer to the pros, cons, or total cost of ownership.  We host our installation on campus.  We host our own storage too.  I installed it, and maintain it.  It can be a little bit complex for some use-cases, but it is a fairly flexible system.  Installation is well documented, and shouldn't give you too much trouble if you are familiar with modern linux systems, tomcat, and apache.  You can probably get good answers to your questions from the mailing list. The main mailing list is at https://groups.google.com/d/forum/dspace-community
+
+
+On Mon, Oct 22, 2018 at 12:36 PM Ryan, Theodore T. <TRyan@stmartin.edu> wrote:
+Mr. Peterson,
+ 
+  I reached out to Francesca Rasmus about PLU using Dspace. I am finishing up my senior year at Saint Martin’s and working on a senior project researching Dspace and Islandora as possible use to set upa repository for the University. I was wondering if you answer some questions about your university use of Dspace:
+ 
+Do you hold space on site for servers to run it or is that on the cloud?
+ 
+Did the university use a vendor to install and run it or is that managed by the University?
+ 
+If you use a vendor and able to say how much does it cost your university yearly?
+ 
+What additional systems other then listed on the Dspace page is required?
+ 
+Your recommendation on using the system:
+ 
+Pros:
+ 
+Cons:
+ 
+If you can answer these question it would be great. If you need to reach me my Email is: Tryan@stmartin.edu and cell is : 253-677-9665
+ 
+ 
+ 
+Ted Ryan
+ 
+and 
+About 1.4TB, but I think we're currently only using 25% of that.
+
+On Mon, Oct 22, 2018 at 2:51 PM Ryan, Theodore T. <TRyan@stmartin.edu> wrote:
+Thank you for your reply. How much space due you have set up for Dspace?
+ 
+From: Ola Peterson <ola.peterson@plu.edu> 
+Sent: Monday, October 22, 2018 1:58 PM
+To: Ryan, Theodore T. <TRyan@stmartin.edu>
+Subject: Re: Dspace questions for senior project
+
+Presentation notes by Augustine:
+Islandora 
+Islandora is a digital repository system, meaning it is designed to both store and organize information. It is based on Fedora, Drupal, and Solr, among other software:
+•	Fedora Commons is designed to have digital repositories such as Islandora built upon it. Its purpose it to instill a modular design into any software based on it. It is designed to allow for a digital repository to easily communicate information from one module to another. Modular design also allows for easy additions to the base structure, making growth a significantly simplified process.
+•	Drupal is a content-management system, used as a web application framework for a lot of websites worldwide, and is written in PHP. While PHP is required for implementation of the system, no programming skills are necessary for basic website installation and administration.
+•	Apache Solr is a search engine written in Java, based on the Apache Lucene project, which is an information retrieval software library. It is designed for scalability, and major features includes full-text search, hit highlighting, faceted search, real-time indexing, dynamic clustering, database integration, NoSQL features and rich document handling.
+ 
+Pros (Strong):
+•	It was designed initially by a college library system, the Robertson Library of the University of Prince Edward Island. It is also popular and used by many institutional libraries. Therefore, it is highly likely to be compatible with our requirements, as we are trying to emulate the original intent of the software.
+•	Support for any file type (domain agnostic), which is useful generally, good for a library which stores multiple types of data, and good in our case when we don’t yet know the file types. It is also domain agnostic, meaning it
+•	There is documentation for learning how to implement Islandora available from the Islandora homepage. With the goal of creating a system that is both easy to implement and simple to learn, this fits our needs very well.
+•	Modular design is good for growth, as well as simplifying the learning process for future administrators of the implemented system.
+•	Sandbox.
+
+Other Pros (From Wikipedia):
+•	Support for any file type (Fedora).
+•	Multi-language and functionality support (Drupal).
+•	A modular framework for defining specific data types, including standard audio, PDF, images, paged content, videos, and web archives.
+•	Support for any XML metadata standard, including unique schemas.
+•	Data-entry/editing forms for any XML schema.
+•	Support for the creation of relationships between objects.
+•	A flexible faceted search (Solr).
+•	Automation of the transformation of assets.
+•	Editorial workflows for approving submissions to the repository.
+
+Cons:
+•	Drupal is known to be less user friendly. This is somewhat mitigated by use of the Islandora format, but detailed maintenance of the system might still require knowledge of how to understand Drupal PHP.
+•	It implements a lot of supplementary systems; at least passing knowledge of how they work is probably required, and it could potentially get confusing and convoluted.
+
+Islandora
+
+CLAW Demo - Open Repositories 2018
+
+Start (User Documentation) 
+
+
+Potential Service Companies:
+
+DiscoveryGarden: Has worked with both universities and public libraries in the past; should be well suited to the type of work we require. Standard Service: $10,000 yearly
+DiscoveryGarden
+
+Lyrasis: Does not specialize in Islandora but does provide it as service. Advertises as a service for Academic Libraries.
+Lyrasis
+
+Born-Digital: N/A
+
+Digital Echidna: Drupal Development Firm. More focused on the needs of a profit-driven company; not the best fit for our purposes.
+
+Agile Humanities Agency: Open-Source development. Has worked with libraries and universities. Has also collaborated with student programmers working on school projects in the past, may be a great fit for our project.
+Agile Humanities
+Portfolio
+ Dspace notes by Raj:
+ USEFUL TIPS ON DSPACE REPOSITORY ARCHITECTURE
+•	DSpace is well tested in a Linux, PostgreSQL environment.
+•	Always run your repository with the latest software versions.
+•	Putting Apache web server in front of Tomcat works well and makes the platform stable and possibly scalable.
+•	If possible, use version control to manage your changes.
+USEFUL TIPS FOR REPOSITORY BACKUP AND RECOVERY
+•	It is important to have a Business Continuity Plan that covers backups/restore procedures and policies for disaster recovery.
+For more information about repository preservation, check out this page on Gibson’s SUNScholar wiki.
+ 
+
+Architectural Overview
+DSpace is a set of cooperating Java web applications and utility programs that maintain an asset store and an associated metadata store. The web applications provide interfaces for administration, deposit, ingest, search, and access. The asset store is maintained on a file system or similar storage system. The metadata, including access and configuration information, is stored in a relational database.
+Service Providers
+DSpace has a global, active network of registered service providers who provided commercial support, hosting, training or site customization. https://duraspace.org/dspace/resources/service-providers/
+Technical Aspects
+Operating System:  Written in Java, tested under Linux, Windows, and Mac OSX
+License:  BSD
+Release version: 6.0, https://duraspace.org/dspace/download/
+Documentation: https://wiki.duraspace.org/display/DSDOC/
+Other prerequisite software: Java 7 or 8, Apache Maven, Apache Ant, Relational Database - PostgreSQL or Oracle, Servlet 3.0 container (Tomcat 7+ or similar).
+Key Features
+Application Architecture: DSpace is a full stack web application, consisting of a database, storage manager and front end web interface. The architecture includes a specific data model with configurable metadata schemas, workflows and browse/search functionality.
+Modern, RESTful Web UI (coming soon): DSpace 7.0 will feature a completely rewritten web user interface based on the Angular 2 javascript platform.
+Built-in workflows: Originally designed for libraries, the embedded DSpace data model and approval workflows are familiar to librarians and archivists.
+Built-in search engine: DSpace comes packaged with Apache Solr, an open source enterprise search platform that enables filtered (faceted) searching and browsing of all objects. The full text of common file formats is searchable, along with all metadata fields. Browse by interfaces are also configurable.
+Unlimited File types: DSpace can store any type of file. In addition, it auto-recognizes files of most common formats (e.g., DOC, PDF, XLS, PPT, JPEG, MPEG, TIFF).
+Metadata: By default, DSpace uses a Qualified Dublin Core (QDC) based metadata schema. Institutions can extend that base schema or add custom QDC-like schemas. DSpace can import or export metadata from other major metadata schemas such as MARC or MODS.
+Tools/plugins: DSpace comes with a suite of tools (batch ingest, batch export, batch metadata editing, etc.) and plugins for translating content into DSpace objects. Additionally, commercial plugins are available through service providers.
+Security: DSpace provides its own built-in authentication / authorization system, but can also integrate with existing authentication systems such as LDAP or Shibboleth.
+Permissions: DSpace allows you to control read/write permissions site-wide, per community, per collection, per item and per file. You may also delegate administrative permissions per community or per collection.
+Disaster Recovery: DSpace allows you to export all of your system content as AIP (Archival Information Packages) backup files. These AIPs can be used to restore your entire site, or restore individual communities, collections or items.
+OAI-PMH / SWORD (v1 and v2) / OpenAIRE / Driver: DSpace complies with standard protocols and best practices for access, ingest, and export.
+REST: DSpace provides RESTful APIs in accordance with modern web standards.
+Configurable Database: Organizations can choose either PostgreSQL or Oracle for the database in which DSpace manages items and metadata.
+Configurable File Storage: Files in DSpace can be stored either using a local filesystem (default) or a cloud-based solution, such as Amazon S3.
+Data Integrity: On upload, DSpace calculates and stores a checksum for each file. Optionally, you may ask DSpace to verify those checksums to validate file integrity.
+Languages: DSpace is available in over 20 languages.
+Software Development
+Duraspace hosts a group of leading-edge open source projects characterized by thriving, consensus-driven, developer communities, including governance and membership, that strive to produce high quality products that insure sophisticated access and management of durable digital information.
+
+Subscription Plan
+Pricing
+DSpaceDirect Small
+The DSpaceDirect Small plan is suited for small organizations at the beginning stages of implementing a repository that have limited content and anticipate slow growth for the repository.
+Features
+Annual Subscription Price: $3,940
+Annual Storage: 75 GB
+________________________________________
+DSpaceDirect Medium
+This plan is ideal for organizations at the beginning stages of implementing a repository that have a variety of content which needs to be stored and anticipate medium growth for the repository.
+Features
+Annual Subscription Price: $5,780
+Annual Storage: 150 GB
+________________________________________
+DSpaceDirect Large
+This plan is designed for organizations at any stage of implementing a repository that have a large amount of content which needs to be stored and anticipate substantial growth for the repository.
+Features
+
+
+Free Guide:
+http://www.fao.org/elearning/#/elc/en/course/H
+
+
+Managing IPR
+Where you are providing an institutional repository you will need permission from the IPR owner to do the things necessary to store, organise and manage the repository.
+
+This can be done with a deposit licence, which is a standard agreement between the person depositing material in the repository and the institution running it.
+
+It gives the repository the permission to make copies of the work and distribute them via the internet as well do what is necessary to preserve the work. It should also include a declaration from the depositor that they are the copyright owner or have the permission of the owner to deposit the material.
+
+
+https://www.youtube.com/watch?v=CyW6j5J3Rzg
+
+http://wiki.lib.sun.ac.za/index.php?title=SUNScholar/DSpace
+
+Augustine uploaded sandbox for Islandora on Laptop
+Reg set up AWS for set up a running slimmed down version of both systems
+ 
+ Raj coordinate with Cleint for meeting in next two weeks.
+ To:
+Stewart-Mailhiot, Amy;
+Cc:
+Ryan, Theodore T.;
+Grant, Regenal;
+Maddox, Augustine;
+Nelson, Harold L.;
+
+Amy,
+We have put together a  comparison between  Dspace and Islandora. We would like to show it to you, is there a open time for a meeting.
+Tuesday or Thursday 11:00 AM would be the best time if you have some open slots
+
+Thank You
+Raj
+
+Reply From Amy
+Raj,
+I am so sorry! As soon as this popped up I realized I had not responded to your earlier email. If you are still interested in meeting on Thursday, the 11am time slot works.
+Thanks,
+Amy
+ 
+Tuesday 2-oct-2018 meeting
+  Go permission from Mario for up ro $100 to spend in AWS to create a server and spot to attmept to up load a demonstration of both serices.
+  Contacting PLU and WWU for information as they use smae services of Islandora(WWU) and Dspace(PLU)
+  establishing nrequirements to run system
+  
+20-Sept-2018:
+  Conducted meeting with Dean of Library Amy Stewart-Mailhiot . 
+    Set what she wanted researched for an Intelectual Repositry.
+      1 - Check mutiple other sources, two she wants checked out is Dspace and Islandora
+      Group set up goals:
+        Research mutiple sources and meet again on 25 oct to go over systems that meet Freeware and used to set up IR
+ 25- Sept:
+        Systems I looked at Invenio and VuFind. Invenio was recented compleely overhauled and older Inventio systems were incompatable wih the new system. Recomend statying
+        away from it currently.
+        VuFind uses Solr Energy. Apache Solr which is used by Islandora. The freware used and developed by Villanova uNiversity.
+        Compared t Islandora and Dspace recommend staying with main two softwares choices.
+27 -Sep: Team agreed to research just Dspace and Islandora after intial comparison.
+        Split team up with AUgustine and me research Islandora and Raj and Ahmed research Dspace
+30-Sep: Isloandora is located at https://www.islandora.ca
+          designed initially by a college library system, the Robertson Library of the University of Prince Canada
+          Software alnguages and systems used with it are:
+           Fedora, Apache Solr, and Drupal
+           Sandbox is available for testing allow us to get initial hands use
+           Very easy up-front user controls
+           Documentation easily reached. Says for download can use Github
+           There is documentation for learning how to implement ISLANDORA available from the ISLANDORA homepage. With the goal of creating a system that is both easy to implement and simple to learn, this fits our needs very well.
+           A modular framework for defining specific data types, including standard audio, PDF, images, paged content, videos, and web archives
+           A flexible faceted search (Solr).
+      Videos watched:
+          https://www.youtube.com/watch?v=IF0ppflKtTM&t=174s
+          https://www.youtube.com/watch?v=emNMZFBN0bc&list=PL0J3FDIF-sPVM27VNsAP1XqfOHKk20UoR
+   5 - OCt: Run Sandbox to see how it uploads files
+   16-Oct: Got together what we had researched. Group wanted to go with Islandora. I recommeded we doclient update brief see what te client wants
+   18-Oct: put together intial presentation ofr Mid term brief. Contacted PLU and Oregon Library on experiences with Dspace and Islandora
+   PLU (Dspace)- Installed it themselves.  Some issue with user interface 
+   Oregon State Library (Islandora) - Had a vendor install and operate it. Find the user interface very easy to use. Vendor controls all backside and require intractions if they wish to change the systm at all.
+   22- oct to PLU
+   Mr. Peterson,
+ 
+  I reached out to Francesca Rasmus about PLU using Dspace. I am finishing up my senior year at Saint Martin’s and working on a senior project researching Dspace and Islandora as possible use to set upa repository for the University. I was wondering if you answer some questions about your university use of Dspace:
+ 
+Do you hold space on site for servers to run it or is that on the cloud?
+ 
+Did the university use a vendor to install and run it or is that managed by the University?
+ 
+If you use a vendor and able to say how much does it cost your university yearly?
+ 
+What additional systems other then listed on the Dspace page is required?
+ 
+Your recommendation on using the system:
+ 
+Pros:
+ 
+Cons:
+ 
+If you can answer these question it would be great. If you need to reach me my Email is: Tryan@stmartin.edu and cell is : 253-677-9665
+ 
+ 
+ 
+Ted Ryan
+
+Hello Ted Ryan,
+
+I don't work closely with many of the users of the system, and I am not well versed in competing software systems.  I can't give you a good answer to the pros, cons, or total cost of ownership.  We host our installation on campus.  We host our own storage too.  I installed it, and maintain it.  It can be a little bit complex for some use-cases, but it is a fairly flexible system.  Installation is well documented, and shouldn't give you too much trouble if you are familiar with modern linux systems, tomcat, and apache.  You can probably get good answers to your questions from the mailing list. The main mailing list is at https://groups.google.com/d/forum/dspace-community
+ 
+ To:
+'Ola Peterson' <ola.peterson@plu.edu>;
+
+
+
+Thank you for your reply. How much space due you have set up for Dspace?
+
+bout 1.4TB, but I think we're currently only using 25% of that.
+
+Called Oregon State Library talked ot them about their use of Islandora
+Issue: With vendor have go thru vendor for all changes
+
+1-Nv-2018
+ Meetin client wants us to focus on Islandora
+ 
+ 13-Nov Vendor contacts
+ 
+PROJECT EMAILS
+CONVERSATIONS BY DATE
+
+AllUnreadTo meFlagged
+
+LAST WEEK 
+
+
+Bhetwal, Raj K. 
+
+
+Documents 
+
+Fri 12/7 
+
+No preview is available. 
+
+
+Bhetwal, Raj K. 
+
+
+Presentation Slides 
+
+Mon 12/3 
+
+Hello All, Below is the link for the our project link https://1drv.ms/p/s!AoDTHPhqktMAgUaUiHIyyX0fEMAv This is online version so every one can edit it and don’t have to keep sending the updated file to every one. One of the thing I did to this file I 
+TWO WEEKS AGO 
+
+
+Harold Nelson (via SMU) 
+
+
+[CSC480/A1-2018/FALL/Main] Presentations 
+
+11/29/2018 
+
+Final Presentations will be at 1 PM on Thursday of finals week. 
+
+
+Bhetwal, Raj K. 
+
+
+Data Structures of ISLANDORA 
+
+11/27/2018 
+
+No preview is available. 
+
+
+Noah Smith 
+
+
+
+
+
+
+Cost for set-up and running Islandora in a Private university 
+
+11/27/2018 
+
+Whoops, my brain is backwards today. We're busy after 4pm Eastern (1pm Pacific) for the rest of this week - how does next week look for you? All the best, ~Noah -- Noah W. Smith, Founder + CEO Born-Digital | 84 Russell St, Hadley MA | phone: 413 
+LAST MONTH 
+
+
+Adam Smith 
+
+
+
+
+
+Cost fo set-up and running Islandora in a Private university 
+
+11/13/2018 
+
+Hello Ted, Thank you for reaching out to us here at discoverygarden. I am the Business development manager for Discoverygarden inc. discoverygarden develops Digital/Institutional Repository systems for high profile organizations around the world usi 
+
+
+Dean Irvine 
+
+
+
+
+
+Cost for set-up and running Islandora in a Private university 
+
+11/13/2018 
+
+Hi Ryan— Thanks for your message. Here’s a general response to your query. Let me know if you’d like to follow up with more details about your requirements. If so, please feel free to schedule a time using my Calendly link<https://calendly.com/agilehum 
+OLDER 
+
+
+Bhetwal, Raj K. 
+
+
+meeting 
+
+10/25/2018 
+
+Amy, We have put together a comparison between Dspace and Islandora. We would like to show it to you, is there a open time for a meeting. Tuesday or Thursday 11:00 AM would be the best time if you have some open slots Thank You Raj 
+
+
+Bhetwal, Raj K. 
+
+
+presentation link 
+
+10/25/2018 
+
+https://1drv.ms/p/s!AoDTHPhqktMAgT1kt_nQuOgeg34V​ 
+
+
+Grant, Regenal 
+
+
+presentation 
+
+10/25/2018 
+
+​i couldnt add my slides without screwing yours up ________________________________ From: Ryan, Theodore T. Sent: Wednesday, October 24, 2018 12:45 PM To: Grant, Regenal Subject: presentation [sig_logo] Respectfully Ted Ryan CRM Devel 
+
+
+Bhetwal, Raj K. 
+
+
+CSC 480 Team 
+
+9/18/2018 
+
+Hello Again. 
+
+
+Bhetwal, Raj K. 
+
+
+CSC 480 Team 
+
+9/18/2018 
+
+Hello Team 
+
+
+Bhetwal, Raj K. 
+
+
+
+
+Project 
+
+9/17/2018 
+
+Amy, Is it possible to set-up an appointment with you to gather information on the project? Thank You Raj From: Stewart-Mailhiot, Amy Sent: Wednesday, September 12, 2018 8:42 PM To: Bhetwal, Raj K. <Raj.Bhetwal@stmartin.edu> Subject: RE: Projec 
+
+
+Bhetwal, Raj K. 
+
+
+Group Project 
+
+9/12/2018 
+
+Hello, This is Raj. I went to the library today to see the head library person. But the helpdesk person said me it would be a good idea to take appointment. I have emailed the head asking is they have any projects that we can help them with. Did you 
+
+
+
+
+
+Cost for set-up and running Islandora in a Private university 
+
+REPLY
+REPLY ALL
+FORWARD
+
+Mark as unread
+
+
+Dean Irvine <dean@agilehumanities.ca> 
+Tue 11/13/2018 11:20 AM
+
+
+To:
+Ryan, Theodore T.;
+Cc:
+theodore.ryan@outlook.com;
+
+Flag for follow up. Start by Tuesday, November 13, 2018. Due by Tuesday, November 13, 2018. 
+
+Get more apps
+Action Items
+Hi Ryan— 
+
+Thanks for your message. Here’s a general response to your query. Let me know if you’d like to follow up with more details about your requirements. If so, please feel free to schedule a time using my Calendly link.
+
+1. Set up and Installation
+Our base cost for setup and installation of Islandora 7 along with standard, community supported solution packs on a client-maintained server is $3600 + HST. 
+
+This assumes that the client’s institution provides access to a system administrator to facilitate server access and the like. Any institutional branding and theming of the repository would be an additional cost, and these design services can be quoted for you once we have a better sense of the specific system requirements and information architecture for your institutional repository.  Our rates for custom design work are $150/h or $1200 per day.
+
+2. Annual services agreement for Islandora. 
+Includes the equivalent of 40 developer hours (at an agency rate of $150/h), with 24 allocated to general maintenance, security updates, and backups, and 16 to minor feature development.
+A retainer for services will be billed in advance, with reconciliations done on an annual basis. Any budget remaining at the end of the year will be rolled over to the following year and documented under a new agreement. Reports on services will be issued quarterly.
+Includes regularly scheduled general maintenance, security updates, and monthly data backups (client must provide server space for backups). Agreement covers incidental, routine and minor tasks, generally defined as tasks estimated to take 2 work hours or less to complete. May include requests for minor feature development. Tasks estimated to take over 2 hours will be negotiated separately with the client unless it is mutually agreed to apply the required work time to the agreement. Maintenance does not cover server hardware, configurations, or administration, which is the domain of the client’s web host.
+40h @ $150/h = $6000 + HST per year
+
+Best wishes
+
+Dean
+
+Dean Irvine, Director
+Agile Humanities Agency
+889 Queen Street West, 2nd floor
+Toronto, ON      M6J 1G5
+
+dean@agilehumanites.ca
+416.277.5696
+@AgileHumanities
+
+Hello Ted, 
+
+Thank you for reaching out to us here at discoverygarden.  
+
+I am the Business development manager for Discoverygarden inc. discoverygarden develops Digital/Institutional Repository systems for high profile organizations around the world using the award-winning Islandora Open Source software framework. Discoverygarden, as a contributor, has committed over 95% of the open source Islandora code which is used freely by organizations wishing to store, share, and preserve their important digital content.
+ 
+Our client list includes such notables as UCLA, Vanderbilt University, The Hagley Museum, The University of Iowa, University of Connecticut, San Diego State University, Northern Illinois University, Caltech, Boston College, Atlanta University Center, The University of Sydney, Kansas City public library, San Francisco Public library and many, many more.
+
+Before providing you with a general quote, I have some questions:
+
+Is this a new repository or are you migrating content from an existing system?
+What type of content are you storing?
+How much content (GB,TB) are you anticipating needing storage for in year 1?
+Are you interested in a vendor providing hosting services for your repository?
+Do you have any documented requirements you could share?
+
+Thanks,
+
+Adam
+
+Adam Smith
+Business Development Manager
+discoverygarden inc. | Managing Digital Content
+http://www.discoverygarden.ca | 902-367-3851
+ 
+ replied with:
+ 
+ 
+
+Ryan, Theodore T. 
+Tue 11/20/2018 10:33 AM
+Sent Items
+
+To:
+'Adam Smith' <adam.smith@discoverygarden.ca>;
+Cc:
+theodore.ryan@outlook.com;
+
+
+
+Adam,
+ 
+I apologize for the delay. Here are some answers for you:
+ 
+Is this a new repository or are you migrating content from an existing system? New repository
+What type of content are you storing? Images, videos, sound files, various documents in formats of excel, PDF, and .doc , and some programing files possibly initially
+How much content (GB,TB) are you anticipating needing storage for in year 1? I would say plan estimate of 1.5 TB max with chance of reduction. Talked to local institution about same size and private and they have a 1.25 TB and only use about 40% so far of that space.
+Are you interested in a vendor providing hosting services for your repository? Possible quote for both hosted services and just set up services with training
+Do you have any documented requirements you could share? Not at this time.
+ 
+Let me know if this is enough to go on thank you.
+ 
+Respectfully
+ 
+Ted Ryan
+253-677-9665
+360-486-8117
+Theodore.ryan@outlook.com
+
+DID NOT GET A REPY AFTER THIS.
+
+
+Noah Smith <noah@born-digital.com>  attmepted to set up meeting but scheadules did not allow 
+
+29-Nov agreed to set up meeting with Client to give final brief on status of Project
+6-Dec: Attended the meeting and presented her our final slide. After the presentation we asked if she was happy with our work and 
+ her reply to this question was yes.
+
+Completed intial draft of final report, sent to team to  review. Add slides to fit last breifing on Thursday.
