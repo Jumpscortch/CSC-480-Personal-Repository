@@ -1,0 +1,210 @@
+Presentation order
+ Slide show/ follow by Islandora demonstration/ Dspace Sandbox/ AWS
+ Project: Saint Martin’s Library is looking at creating a Institutional Repository (IR). The plan is to look at two open source systems to look at for comparison. The two open source IR are ISLANDORA and DSPACE. Each system is used by multiple higher learning institutions.
+Saint Martin’s Library is looking at creating a Institutional Repository (IR). The plan is to look at two open source systems to look at for comparison. The two open source IR are ISLANDORA and DSPACE. Each system is used by multiple higher learning institutions.
+
+next slide: Client:Amy Stewart-Mailhiot
+Title: Dean of library and learning resources
+
+next slide Dspace describetion from Raj notes
+Next sldie cont
+Next slide features Dspace
+
+Next Slide Islandora describetion
+Next slideses key features
+Follwoing slides cover issues
+Issue: Drupal language
+Issue: set up actual Islandora for set up knowledge
+Issue: Hands on use 
+Anserwered from oregon Library:
+Do you hold space on site for servers to run it or is that on the cloud?
+ No, it is not installed on site, it is hosted.
+Did the library use a vendor to install and run it or is that managed by the yourself?
+Yes, we used a vendor to install and maintain Islandora.
+How does it handle for uploading data into the system? Easy or hard for users to add documentation?
+ It is fine. The browser-based staff interface can be frustrating (and slow) but it works okay. The book content model in particular has given us errors and frustrations, but the regular PDF content model works fine and we also use the compound object content model pretty extensively. (The frustration with compound objects is reordering child objects, which is quite slow.) We have started using the video content model (we participated in a pilot that our vendor undertook) and it seems fine too.
+If you use a vendor and able to say how much does it cost your library yearly/or pay out of pocket maintain the system yourself?
+ I’m afraid I don’t remember what the annual cost is.
+What additional systems other than listed on the Islandora page is required?
+ I don’t think there is anything else that is required.
+Your recommendation on using the system:
+ I would recommend it – you either need staff and time to install and maintain yourself, or the budget to pay a vendor to do it (and just because it’s open source doesn’t mean that will be cheaper than a proprietary system) but overall I like it.
+Pros:
+ It is a robust system with an active community and development continuously happening, and even though we have a hosted system, we can benefit from the developments once they are vetted and available to customers of the vendor. There are multiple content models already available and it is flexible.
+Cons:
+Since it is hosted and because of how the vendor sets things up, we cannot access any theming or customization. We can only add or edit objects and object datastreams, but nothing on the Drupal side or command line. We can’t batch edit metadata that is already in the system (also a limitation of the hosted setup).
+
+Issue: Hardware needed to run system
+Issue: Cost Possible answer: Islandora general vendor $10,000 and vendor for Dspace $11,000
+
+Plu information recieved:
+About 1.4TB, but I think we're currently only using 25% of that.
+
+On Mon, Oct 22, 2018 at 2:51 PM Ryan, Theodore T. <TRyan@stmartin.edu> wrote:
+Thank you for your reply. How much space due you have set up for Dspace?
+ 
+From: Ola Peterson <ola.peterson@plu.edu> 
+Sent: Monday, October 22, 2018 1:58 PM
+To: Ryan, Theodore T. <TRyan@stmartin.edu>
+Subject: Re: Dspace questions for senior project
+ 
+Hello Ted Ryan,
+ 
+I don't work closely with many of the users of the system, and I am not well versed in competing software systems.  I can't give you a good answer to the pros, cons, or total cost of ownership.  We host our installation on campus.  We host our own storage too.  I installed it, and maintain it.  It can be a little bit complex for some use-cases, but it is a fairly flexible system.  Installation is well documented, and shouldn't give you too much trouble if you are familiar with modern linux systems, tomcat, and apache.  You can probably get good answers to your questions from the mailing list. The main mailing list is at https://groups.google.com/d/forum/dspace-community
+
+Notes by Raj Bhetwal:
+9450 SW Gemini Drive #79059 | Beaverton, OR 97008 | (607) 216-4548 | http://duraspace.org
+Pricing quoted above based on annual contract with payment due upon 30 days of invoice and
+acceptance of standard service level agreement terms.
+Quote valid for 30 days from date of issuance.
+Quote intended for recipient listed above. Please do not redistribute. 1
+Custom Quote
+Raj Bhetwal
+Saint Martin's University
+9/27/18
+Requested Subscription Plan
+DSpaceDirect Large
+This plan is designed for organizations at any stage of implementing a repository that have a large amount of content which needs to be stored and anticipate substantial growth for the repository.
+• Annual price: $8,670/year
+• Storage: 250GB
+• Includes all standard features. All add-on packages available.
+$8,670 Requested Optional Add-On Packages
+Additional Storage (Large Plan)
+• Price: $1,910 (custom quote for 1 TB)
+$1,910
+Custom URL Package (all plans)
+Enable your DSpaceDirect account to be available via your institution’s URL (e.g. dspace.myuniversity.edu). Note this requires that you be able to manage your institution’s DNS or request changes of your institution’s DNS as well as provide a valid SSL certificate.
+• Price: $275 (one-time setup cost)
+$275 TOTAL $10,855
+
+USEFUL TIPS ON DSPACE REPOSITORY ARCHITECTURE
+•	DSpace is well tested in a Linux, PostgreSQL environment.
+•	Always run your repository with the latest software versions.
+•	Putting Apache web server in front of Tomcat works well and makes the platform stable and possibly scalable.
+•	If possible, use version control to manage your changes.
+USEFUL TIPS FOR REPOSITORY BACKUP AND RECOVERY
+•	It is important to have a Business Continuity Plan that covers backups/restore procedures and policies for disaster recovery.
+For more information about repository preservation, check out this page on Gibson’s SUNScholar wiki.
+ 
+
+Architectural Overview
+DSpace is a set of cooperating Java web applications and utility programs that maintain an asset store and an associated metadata store. The web applications provide interfaces for administration, deposit, ingest, search, and access. The asset store is maintained on a file system or similar storage system. The metadata, including access and configuration information, is stored in a relational database.
+Service Providers
+DSpace has a global, active network of registered service providers who provided commercial support, hosting, training or site customization. https://duraspace.org/dspace/resources/service-providers/
+Technical Aspects
+Operating System:  Written in Java, tested under Linux, Windows, and Mac OSX
+License:  BSD
+Release version: 6.0, https://duraspace.org/dspace/download/
+Documentation: https://wiki.duraspace.org/display/DSDOC/
+Other prerequisite software: Java 7 or 8, Apache Maven, Apache Ant, Relational Database - PostgreSQL or Oracle, Servlet 3.0 container (Tomcat 7+ or similar).
+Key Features
+Application Architecture: DSpace is a full stack web application, consisting of a database, storage manager and front end web interface. The architecture includes a specific data model with configurable metadata schemas, workflows and browse/search functionality.
+Modern, RESTful Web UI (coming soon): DSpace 7.0 will feature a completely rewritten web user interface based on the Angular 2 javascript platform.
+Built-in workflows: Originally designed for libraries, the embedded DSpace data model and approval workflows are familiar to librarians and archivists.
+Built-in search engine: DSpace comes packaged with Apache Solr, an open source enterprise search platform that enables filtered (faceted) searching and browsing of all objects. The full text of common file formats is searchable, along with all metadata fields. Browse by interfaces are also configurable.
+Unlimited File types: DSpace can store any type of file. In addition, it auto-recognizes files of most common formats (e.g., DOC, PDF, XLS, PPT, JPEG, MPEG, TIFF).
+Metadata: By default, DSpace uses a Qualified Dublin Core (QDC) based metadata schema. Institutions can extend that base schema or add custom QDC-like schemas. DSpace can import or export metadata from other major metadata schemas such as MARC or MODS.
+Tools/plugins: DSpace comes with a suite of tools (batch ingest, batch export, batch metadata editing, etc.) and plugins for translating content into DSpace objects. Additionally, commercial plugins are available through service providers.
+Security: DSpace provides its own built-in authentication / authorization system, but can also integrate with existing authentication systems such as LDAP or Shibboleth.
+Permissions: DSpace allows you to control read/write permissions site-wide, per community, per collection, per item and per file. You may also delegate administrative permissions per community or per collection.
+Disaster Recovery: DSpace allows you to export all of your system content as AIP (Archival Information Packages) backup files. These AIPs can be used to restore your entire site, or restore individual communities, collections or items.
+OAI-PMH / SWORD (v1 and v2) / OpenAIRE / Driver: DSpace complies with standard protocols and best practices for access, ingest, and export.
+REST: DSpace provides RESTful APIs in accordance with modern web standards.
+Configurable Database: Organizations can choose either PostgreSQL or Oracle for the database in which DSpace manages items and metadata.
+Configurable File Storage: Files in DSpace can be stored either using a local filesystem (default) or a cloud-based solution, such as Amazon S3.
+Data Integrity: On upload, DSpace calculates and stores a checksum for each file. Optionally, you may ask DSpace to verify those checksums to validate file integrity.
+Languages: DSpace is available in over 20 languages.
+Software Development
+Duraspace hosts a group of leading-edge open source projects characterized by thriving, consensus-driven, developer communities, including governance and membership, that strive to produce high quality products that insure sophisticated access and management of durable digital information.
+
+
+ Subscription Plan
+Pricing
+DSpaceDirect Small
+The DSpaceDirect Small plan is suited for small organizations at the beginning stages of implementing a repository that have limited content and anticipate slow growth for the repository.
+Features
+Annual Subscription Price: $3,940
+Annual Storage: 75 GB
+________________________________________
+DSpaceDirect Medium
+This plan is ideal for organizations at the beginning stages of implementing a repository that have a variety of content which needs to be stored and anticipate medium growth for the repository.
+Features
+Annual Subscription Price: $5,780
+Annual Storage: 150 GB
+________________________________________
+DSpaceDirect Large
+This plan is designed for organizations at any stage of implementing a repository that have a large amount of content which needs to be stored and anticipate substantial growth for the repository.
+Features
+
+
+Free Guide:
+http://www.fao.org/elearning/#/elc/en/course/H
+
+
+Managing IPR
+Where you are providing an institutional repository you will need permission from the IPR owner to do the things necessary to store, organise and manage the repository.
+
+This can be done with a deposit licence, which is a standard agreement between the person depositing material in the repository and the institution running it.
+
+It gives the repository the permission to make copies of the work and distribute them via the internet as well do what is necessary to preserve the work. It should also include a declaration from the depositor that they are the copyright owner or have the permission of the owner to deposit the material.
+
+
+https://www.youtube.com/watch?v=CyW6j5J3Rzg
+
+http://wiki.lib.sun.ac.za/index.php?title=SUNScholar/DSpace
+
+Notes by Maddox Augustine:
+Islandora 
+Islandora is a digital repository system, meaning it is designed to both store and organize information. It is based on Fedora, Drupal, and Solr, among other software:
+•	Fedora Commons is designed to have digital repositories such as Islandora built upon it. Its purpose it to instill a modular design into any software based on it. It is designed to allow for a digital repository to easily communicate information from one module to another. Modular design also allows for easy additions to the base structure, making growth a significantly simplified process.
+•	Drupal is a content-management system, used as a web application framework for a lot of websites worldwide, and is written in PHP. While PHP is required for implementation of the system, no programming skills are necessary for basic website installation and administration.
+•	Apache Solr is a search engine written in Java, based on the Apache Lucene project, which is an information retrieval software library. It is designed for scalability, and major features includes full-text search, hit highlighting, faceted search, real-time indexing, dynamic clustering, database integration, NoSQL features and rich document handling.
+ 
+Pros (Strong):
+•	It was designed initially by a college library system, the Robertson Library of the University of Prince Edward Island. It is also popular and used by many institutional libraries. Therefore, it is highly likely to be compatible with our requirements, as we are trying to emulate the original intent of the software.
+•	Support for any file type (domain agnostic), which is useful generally, good for a library which stores multiple types of data, and good in our case when we don’t yet know the file types. It is also domain agnostic, meaning it
+•	There is documentation for learning how to implement Islandora available from the Islandora homepage. With the goal of creating a system that is both easy to implement and simple to learn, this fits our needs very well.
+•	Modular design is good for growth, as well as simplifying the learning process for future administrators of the implemented system.
+•	Sandbox.
+
+Other Pros (From Wikipedia):
+•	Support for any file type (Fedora).
+•	Multi-language and functionality support (Drupal).
+•	A modular framework for defining specific data types, including standard audio, PDF, images, paged content, videos, and web archives.
+•	Support for any XML metadata standard, including unique schemas.
+•	Data-entry/editing forms for any XML schema.
+•	Support for the creation of relationships between objects.
+•	A flexible faceted search (Solr).
+•	Automation of the transformation of assets.
+•	Editorial workflows for approving submissions to the repository.
+
+Cons:
+•	Drupal is known to be less user friendly. This is somewhat mitigated by use of the Islandora format, but detailed maintenance of the system might still require knowledge of how to understand Drupal PHP.
+•	It implements a lot of supplementary systems; at least passing knowledge of how they work is probably required, and it could potentially get confusing and convoluted.
+
+Islandora
+
+CLAW Demo - Open Repositories 2018
+
+Start (User Documentation) 
+
+
+Potential Service Companies:
+
+DiscoveryGarden: Has worked with both universities and public libraries in the past; should be well suited to the type of work we require. Standard Service: $10,000 yearly
+DiscoveryGarden
+
+Lyrasis: Does not specialize in Islandora but does provide it as service. Advertises as a service for Academic Libraries.
+Lyrasis
+
+Born-Digital: N/A
+
+Digital Echidna: Drupal Development Firm. More focused on the needs of a profit-driven company; not the best fit for our purposes.
+
+Agile Humanities Agency: Open-Source development. Has worked with libraries and universities. Has also collaborated with student programmers working on school projects in the past, may be a great fit for our project.
+Agile Humanities
+Portfolio
+
+Reg set up AWS and overhauled slides:
+
+Link to presentation:  https://1drv.ms/p/s!AoDTHPhqktMAgT1kt_nQuOgeg34V​
